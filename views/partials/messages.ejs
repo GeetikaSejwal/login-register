@@ -1,16 +1,17 @@
+<!--if the colums of the forms not filled correctly-->
 <% if(typeof errors != 'undefined'){ %>
     <% errors.forEach(function(error) { %>
         <%= error.msg %>
     <% }); %>
 <% } %>
-
+<!--success messages-->
 <% if(success_msg !=''){ %>
     <div class="alert alert-success alert-dismissible fade show" role="alert">
         <%= success_msg %>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 <%  } %> 
-
+<!--error msgs-->
 <% if(error_msg !='' ){ %>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <%= error_msg %>
